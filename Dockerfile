@@ -10,6 +10,7 @@ RUN apt-get -y update && apt-get -y install python-dev python-pip
 
 # installing flower
 RUN pip install flower
+RUN pip install redis==2.10.3
 
 # Make sure we expose port 5555 so that we can connect to it
 EXPOSE 5555
